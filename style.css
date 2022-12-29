@@ -1,0 +1,109 @@
+/*Fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+/*font-family: 'Nunito', sans-serif;*/
+
+/*Variáveis*/
+
+:root{
+    --default: 'Nunito', sans-serif;
+    --background: #2b2e43;
+    --text: #fff;
+    --botton: #4eb879;
+    --tarefa: #484c69;
+    --deletar: #cb3f3e;
+    --xl: 48px;
+    --md: 24px;
+    --sm: 14px;
+   
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: var(--default);
+    font-size: var(--md);
+    font-weight: 400;
+    color: var(--text);
+}
+
+body{
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 500px;
+}
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.titulo{
+    font-size: var(--xl);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.input{
+    width: 100%;
+    color: var(--background);
+    padding: 10px;
+    border-radius: 5px;
+    border: none;   
+    margin-bottom: 10px; 
+}
+
+.botao{
+    background-color: var(--botton);
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.botao:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.tarefas{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.tarefa{
+    background-color: var(--tarefa);
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.deletar{
+    background-color: var(--deletar);
+    border: none;
+    width: 32px;
+    border-radius: 50%;
+ 
+    
+}
